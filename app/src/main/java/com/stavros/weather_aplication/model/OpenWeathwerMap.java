@@ -1,5 +1,5 @@
 
-package com.ongel.weatherapp;
+package com.stavros.weather_aplication.model;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;
