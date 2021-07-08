@@ -45,6 +45,8 @@ public class WeatherActivity extends AppCompatActivity {
 
         search.setOnClickListener(v -> {
             String cityName = editText.getText().toString();
+
+            KeyboardManipulation.closeKeyboard(this.getCurrentFocus(), WeatherActivity.this);
             getWeatherData(cityName);
             editText.setText("");
         });
