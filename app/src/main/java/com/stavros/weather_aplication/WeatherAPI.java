@@ -9,10 +9,10 @@ import retrofit2.http.Query;
 public interface WeatherAPI {
 
 
-    @GET("weather?appid=&units=metric")
+    @GET("weather?appid=cd5bea77f383592331dd24809fe48354&units=metric")
     Call<OpenWeathwerMap> getWeatherWithLocation(@Query("lat") double lat, @Query("lon") double lon);
 
-    @GET("weather?appid=&units=metric")
+    @GET("weather?appid=cd5bea77f383592331dd24809fe48354&units=metric")
     Call<OpenWeathwerMap> getWeatherWithCityName(@Query("q") String name);
 
 }
